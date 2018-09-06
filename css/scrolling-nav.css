@@ -193,3 +193,43 @@ FAQ
 /*
 contact
  */
+
+ /* font-family: 'Baloo Tammudu', cursive;
+ font-family: 'Boogaloo', cursive;
+ font-family: 'Bubblegum Sans', cursive; */
+ /* font-family: 'Love Ya Like A Sister', cursive; */
+/* ont-family: 'Cabin Sketch', cursive; */
+/* kids corner */
+.kc-welcome-title {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 30px;
+  /* line-height: 40px; */
+  color: #dc948b;
+}
+.kc-welcome-p {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 20px;
+  color: rgba(0, 0, 0);
+  line-height: 25px;
+  margin-top: 20px;
+}
+.kc-welcome-explore {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 20px;
+  color: rgba(0, 0, 0);
+  line-height: 25px;
+  margin-top: 20px;
+}
+.kc-title {
+  font-family: 'Cabin Sketch', cursive;
+  color: rgb(138, 40, 27	);
+  font-weight: 900;
+}
+.full-page .h5 {
+  color: #dc948b;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'Cabin Sketch', cursive;
+  padding: 0px 0 10px 0;
+  margin: 0;
+}
