@@ -19,6 +19,36 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Boogaloo|Bubblegum+Sans|Cabin+Sketch|Love+Ya+Like+A+Sister" rel="stylesheet">  </head>
     <style type="text/css">
+      #faq {
+        background-color: #F5F5F5;
+      }
+      #team {
+        background: #f7fafc;
+        padding: 0px;
+      }
+      .self-introduction {
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 12px;
+        color: rgba(0,0,0,.65);
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+      }
+      .team-box {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 0 0 2px rgba(0,0,0,.15);
+        box-sizing: border-box;
+        background: #fff;
+        border-radius: 2px;
+        transition: all .3s;
+      }
+      .time-line {
+        border-bottom: 1px solid #e9e9e9;
+        margin-bottom: 20px;
+      }
       .brief-p {
         font-size: 12px;
       }
@@ -83,24 +113,24 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active" style="background-image: url('img/Slide1.png');background-position: center; background-repeat: no-repeat; background-size: cover;">
             <div class="carousel-caption d-none d-md-block">
-              <h3>First Slide</h3>
-              <p>This is a description for the first slide.</p>
+              <!-- <h3>First Slide</h3>
+              <p>This is a description for the first slide.</p> -->
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('img/GroupPhoto.jpg');background-position: center; background-repeat: no-repeat; background-size: cover;">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Second Slide</h3>
-              <p>This is a description for the second slide.</p>
+              <!-- <h3>Second Slide</h3>
+              <p>This is a description for the second slide.</p> -->
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item" style="background-image: url('img/Slide3.png');background-position: center; background-repeat: no-repeat; background-size: cover;">
             <div class="carousel-caption d-none d-md-block">
-              <h3>Third Slide</h3>
-              <p>This is a description for the third slide.</p>
+              <!-- <h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p> -->
             </div>
           </div>
         </div>
@@ -130,12 +160,12 @@
                          </h2>
                          <p>
                            The goal of the MUSIC, ARTS and CHILD DEVELOPMENT research project is to investigate the impact of arts and music training on children’s cognitive, emotional, social, and brain development.
-                           This research project is a collaborative effort between <a href="#">USC Brain and Creativity Institute</a>, the <a href="#">Los Angeles Philharmonic YOLA program</a> and <a href="#">Camino Nuevo Charter Academy</a>.
+                           This research project is a collaborative effort between <a target="_blank" href="https://dornsife.usc.edu/bci/">USC Brain and Creativity Institute</a>, the <a href="https://www.laphil.com/education/local-programs/youth-orchestra-los-angeles/" target="_blank">Los Angeles Philharmonic YOLA program</a> and <a href="https://www.caminonuevo.org/" target="_blank">Camino Nuevo Charter Academy</a>.
                          </p>
                          <br/>
-                         <img src="./img/lalogo.png" class="img-fluid" alt="">
-                         <img src="./img/Grow.png" class="img-fluid" alt="">
-                         <p>The research project is funded by the generous support of the <a href="#">Los Angeles Philharmonic Association</a> and the <a href="#">GROW @ Annenberg Foundation</a>.  </p>
+                         <a href="https://www.laphil.com/" target="_blank"><img src="./img/lalogo.png" class="img-fluid" alt=""></a>
+                         <a href="https://www.annenberg.org/initiatives/global-humanitarian-arts-education/grow-annenberg/" target="_blank"><img src="./img/Grow.png" class="img-fluid" alt=""></a>
+                         <p>The research project is funded by the generous support of the <a href="https://www.laphil.com/" target="_blank">Los Angeles Philharmonic Association</a> and the <a href="https://www.annenberg.org/initiatives/global-humanitarian-arts-education/grow-annenberg/" target="_blank">GROW @ Annenberg Foundation</a>.  </p>
                     </div>
                </div>
           </div>
@@ -151,107 +181,182 @@
 </em> Meet Our Team</h2>
                     </div>
 
-                    <div class="row equal-height-columns">
-                      <div class="col-lg-4 col-sm-6 text-center mb-4">
-                        <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image1-1.jpg" alt="">
-                        <h5>Dr. Assal Habibi
-                          <br/>
-                          <small>Principal Investigator </small>
-                        </h5>
-                         <p>
-                           <button type="button" class="btn btn-info" title="Assal Habibi" data-toggle="popover" data-content="<p class='brief-p'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dr. Assal Habibi is an Assistant Research Professor of Psychology at the Brain and Creativity Institute at University of Southern California. Her research takes a broad perspective on how biological dispositions and environmental factors interact and how learning experiences during childhood shape human development. She is an expert in the use of electrophysiologic and neuroimaging methods to investigate human brain structure and function and her research has published in several peer reviewed journals. Dr. Habibi completed her doctoral work at UC Irvine, investigating the effects of musical training in musicians, non-musicians and patients with auditory impairments. Dr. Habibi is a classically trained pianist and has many years of musical teaching experience with children.</p>">
-                               View details>>
-                           </button>
-                         </p>
+                    <div class="row equal-height-columns team-members">
+                      <div class="col-lg-4 col-sm-6  text-center mb-4 " >
+                        <div class="team-box">
+                          <div class="time-line">
+                            <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image1-1.jpg" alt="">
+                            <h5>Dr. Assal Habibi
+                              <br/>
+                              <small>Principal Investigator </small>
+                            </h5>
+                          </div>
+
+                           <p class="self-introduction">
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dr. Assal Habibi is an Assistant Research Professor of Psychology at the Brain and Creativity Institute at University of Southern California. Her research takes a broad perspective on how biological dispositions and environmental factors interact and how learning experiences during childhood shape human development. She is an expert in the use of electrophysiologic and neuroimaging methods to investigate human brain structure and function and her research has published in several peer reviewed journals. Dr. Habibi completed her doctoral work at UC Irvine, investigating the effects of musical training in musicians, non-musicians and patients with auditory impairments. Dr. Habibi is a classically trained pianist and has many years of musical teaching experience with children.
+                           </p>
+                        </div>
+
                        </div>
 
-                        <div class="col-lg-4 col-sm-6 text-center mb-4">
-                          <img class="rounded-circle img-fluid d-block mx-auto" src="./img/HD.jpg" alt="">
-                          <h5>Dr. Hanna Damasio
-                            <br/>
-                            <small>Director, Dornsife Neuroimaging Institute </small>
-                          </h5>
-                           <p><button type="button" onclick="jump('Hanna')" class="btn btn-info">View details>></button></p>
+                        <div class="col-lg-4 col-sm-6  text-center mb-4">
+                          <div class="team-box">
+                            <div class="time-line">
+                              <img class="rounded-circle img-fluid d-block mx-auto" src="./img/HD.jpg" alt="">
+                              <h5>Dr. Hanna Damasio
+                                <br/>
+                                <small>Director, Dornsife Neuroimaging Institute </small>
+                              </h5>
+                            </div>
+                            <p class="self-introduction">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hanna Damasio M.D. is University Professor, Dana Dornsife Professor of Neuroscience and Director of the Dana and David Dornsife Cognitive Neuroscience Imaging Center at the University of Southern California.  Using computerized tomography and magnetic resonance scanning, she has developed methods of investigating human brain structure and studied functions such as language, memory and emotion, using both the lesion method and functional neuroimaging.Besides numerous scientific articles (her Web of Knowledge H Index is 74; over 25,000 citations) she is the author of the award-winning Lesion Analysis in Neuropsychology (Oxford University Press), and of Human Brain Anatomy in Computerized Images (also Oxford University Press), the first brain atlas based on computerized imaging data, now in its second edition.
+                            </p>
+                          </div>
+
                          </div>
 
-                         <div class="col-lg-4 col-sm-6 text-center mb-4">
-                           <img class="rounded-circle img-fluid d-block mx-auto" src="./img/AD.jpg" alt="">
-                           <h5>Dr. Antonio Damasio
-                             <br/>
-                             <small>Director, Brain and Creativity Institute </small>
-                           </h5>
-                            <p><button type="button"  onclick="jump('Antonio')" class="btn btn-info">View details>></button></p>
+                      <div class="col-lg-4  col-sm-6 text-center mb-4">
+                           <div class="team-box">
+                            <div class="time-line">
+                              <img class="rounded-circle img-fluid d-block mx-auto" src="./img/AD.jpeg"  alt="">
+                              <h5>Dr. Antonio Damasio
+                                <br/>
+                                <small>Director, Brain and Creativity Institute </small>
+                              </h5>
+
+                            </div>
+                            <p class="self-introduction">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Antonio Damasio is University Professor, David Dornsife Professor of Neuroscience, Professor of Psychology, Professor of Philosophy, and Director of the Brain and Creativity Institute at the University of Southern California; he is also an adjunct professor at the Salk Institute in La Jolla, California.  Damasio has made seminal contributions to the understanding of brain processes underlying, emotions, feelings, decision-making and consciousness.  He is the author of numerous scientific articles (his Google scholar H Index is 144; over 129,000 citations) and his research has received continuous Federal funding for 30 years.  He is the recipient of many awards (including the Grawemeyer Award, 2014; the Honda Prize, 2010; the Asturias Prize in Science and Technology, 2005; and the Signoret Prize, 2004, which he shared with his wife Hanna Damasio).
+                            </p>
+
                           </div>
 
 
                     </div>
                     <div class="row equal-height-columns">
-                        <div class="col-lg-4 col-sm-6 text-center mb-4">
-                          <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image2-1.jpg" alt="">
-                          <h5>Priscilla Perez
+                        <div class="col-lg-4 col-sm-6  text-center mb-4">
+                          <div class="team-box">
+                             <div class="time-line">
+                               <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image2-1.jpg" alt="">
+                               <h5>Priscilla Perez
+                                 <br/>
+                                 <small>Research Coordinator </small>
+                               </h5>
 
-                            <br/>
-                            <small>Research Coordinator </small>
-                          </h5>
-                           <p><button type="button" class="btn btn-info" title="Priscilla Perez" data-toggle="popover" data-content="<p class='brief-p'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Priscilla has worked with the Brain and Music Project since 2015 as a parent interviewer, translator and research coordinator. She first developed her interest in research with understudied populations through her volunteer work as an undergraduate at the University of California, Los Angeles, where she studied Biology. She enjoys reading, hiking and spending time with her cat, Pancho.</p>">View details>></button></p>
+                             </div>
+                           <p class="self-introduction">
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Priscilla has worked with the Brain and Music Project since 2015 as a parent interviewer, translator and research coordinator. She first developed her interest in research with understudied populations through her volunteer work as an undergraduate at the University of California, Los Angeles, where she studied Biology. She enjoys reading, hiking and spending time with her cat, Pancho.
+                           </p>
+                          </div>
                          </div>
 
                          <div class="col-lg-4 col-sm-6 text-center mb-4">
-                           <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image3-1.jpg" alt="">
-                           <h5>Sarah Hennessy
-                             <br/>
-                             <small>Research Coordinator </small>
-                           </h5>
-                            <p><button type="button" class="btn btn-info" title="Sarah Hennessy" data-toggle="popover" data-content="<p class='brief-p'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarah graduated from Occidental College in 2017 with a BA in Psychology and a minor in Ethnomusicology. She has been with the Brain & Music project since 2015, and her time in the lab has cultivated her passion for the intersection of music and science. In her free time, Sarah teaches violin, sings with her friends, and reads books in the southern California sun.</p>">View details>></button></p>
+                           <div class="team-box">
+                              <div class="time-line">
+                                <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image3-1.jpg" alt="">
+                                <h5>Sarah Hennessy
+                                  <br/>
+                                  <small>Research Coordinator </small>
+                                </h5>
+                              </div>
+                            <p class="self-introduction">
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarah graduated from Occidental College in 2017 with a BA in Psychology and a minor in Ethnomusicology. She has been with the Brain & Music project since 2015, and her time in the lab has cultivated her passion for the intersection of music and science. In her free time, Sarah teaches violin, sings with her friends, and reads books in the southern California sun.
+                            </p>
+
+                           </div>
+
                           </div>
 
                           <div class="col-lg-4 col-sm-6 text-center mb-4">
-                            <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image4-1.jpg" alt="">
-                            <h5>Katrina Heine
-                              <br/>
-                              <small>Neuroimaging Data Coordinator </small>
-                            </h5>
-                             <p><button type="button" class="btn btn-info" title="Katrina Heine" data-toggle="popover" data-content="<p class='brief-p'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Katrina graduated from King’s College London in 2016 with a MSc in Neuroimaging. This is her second year with the Brain & Music Project, where she works mainly with scanning and analyzing the MRI data. When she isn’t at the lab, she enjoys playing volleyball and going to the beach. </p>">View details>></button></p>
+                            <div class="team-box">
+                               <div class="time-line">
+                                 <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image4-1.jpg" alt="">
+                                 <h5>Katrina Heine
+                                   <br/>
+                                   <small>Neuroimaging Data Coordinator </small>
+                                 </h5>
+
+                               </div>
+                             <p class="self-introduction">
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               Katrina graduated from King’s College London in 2016 with a MSc in Neuroimaging. This is her second year with the Brain & Music Project, where she works mainly with scanning and analyzing the MRI data. When she isn’t at the lab, she enjoys playing volleyball and going to the beach.
+                             </p>
+
+                            </div>
+
+
                            </div>
                     </div>
 
                     <div class="row equal-height-columns">
                       <div class="col-lg-4 col-sm-6 text-center mb-4">
-                        <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image5-1.jpg" alt="">
-                        <h5>Alison Wood
-                          <br/>
-                          <small>EEG Data Coordinator </small>
-                        </h5>
-                         <p><button type="button" class="btn btn-info" title="Alison Wood" data-toggle="popover" data-content="<p class='brief-p'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alison graduated from Beloit College in 2016 with a Psychology major and Music minor. She works with the EEG data analysis and collection on the Brain & Music Project. In her free time, Alison enjoys reading and playing music.</p>">View details>></button></p>
+                        <div class="team-box">
+                           <div class="time-line">
+                             <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image5-1.jpg" alt="">
+                             <h5>Alison Wood
+                               <br/>
+                               <small>EEG Data Coordinator </small>
+                             </h5>
+                           </div>
+                         <p class="self-introduction">
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           Alison graduated from Beloit College in 2016 with a Psychology major and Music minor. She works with the EEG data analysis and collection on the Brain & Music Project. In her free time, Alison enjoys reading and playing music.
+                         </p>
+
+                        </div>
                        </div>
 
                        <div class="col-lg-4 col-sm-6 text-center mb-4">
-                         <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image6-1.jpg" alt="">
-                         <h5>Gabriel Reigner
-                           <br/>
-                           <small>Research Assistant</small>
-                         </h5>
-                          <p><button type="button" class="btn btn-info" title="Gabriel Reigner" data-toggle="popover" data-content="<p class='brief-p'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gabriel is an undergraduate senior majoring in Neuroscience and Cognitive Science. A background in music performance and composition led him to the Brain & Music Program, where he has been a research assistant since 2016. With graduate school on the horizon, he hopes to explore more deeply the field of cognitive neuroscience. His other interests include surfing, backpacking, and photography.</p>">View details>></button></p>
+                         <div class="team-box">
+                            <div class="time-line">
+                              <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image6-1.jpg" alt="">
+                              <h5>Gabriel Reigner
+                                <br/>
+                                <small>Research Assistant</small>
+                              </h5>
+
+                            </div>
+                          <p class="self-introduction">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Gabriel is an undergraduate senior majoring in Neuroscience and Cognitive Science. A background in music performance and composition led him to the Brain & Music Program, where he has been a research assistant since 2016. With graduate school on the horizon, he hopes to explore more deeply the field of cognitive neuroscience. His other interests include surfing, backpacking, and photography.
+                          </p>
+
+                         </div>
                         </div>
 
                         <div class="col-lg-4 col-sm-6 text-center mb-4">
-                          <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image7-1.jpg" alt="">
-                          <h5>Rohan Menon
-                            <br/>
-                            <small>Research Assistant</small>
-                          </h5>
-                           <p><button type="button" class="btn btn-info" title="Rohan Menon" data-toggle="popover" data-content="<p class='brief-p'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rohan is an undergraduate student in his 3rd year at the University of Southern California, where he is pursuing a degree in Computational Neuroscience and Ethical Philosophy. He is delighted to be a part of the Brain & Music Project, where he is working to understand the impact of musical training on brain development. Outside the lab, Rohan is a part of the USC Men’s Soccer Team and also loves to read, write, and play piano.</p>">View details>></button></p>
+                          <div class="team-box">
+                             <div class="time-line">
+                               <img class="rounded-circle img-fluid d-block mx-auto" src="./img/Image7-1.jpg" alt="">
+                               <h5>Rohan Menon
+                                 <br/>
+                                 <small>Research Assistant</small>
+                               </h5>
+                             </div>
+                           <p class="self-introduction">
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             Rohan is an undergraduate student in his 3rd year at the University of Southern California, where he is pursuing a degree in Neuroscience and Early Childhood Education. He is delighted to be a part of the Brain & Music Project, where he is working to understand the impact of musical training on brain development. Outside the lab, Rohan is a part of the USC Men’s Soccer Team and also loves to read, write, and play piano.
+                           </p>
+                          </div>
                          </div>
                     </div>
                     <div class="row equal-height-columns">
                       <div class="col-lg-4 col-sm-6 text-center mb-4">
-                        <img class="rounded-circle img-fluid d-block mx-auto" src="./img/samhita-1.jpg" alt="">
-                        <h5>Samhit Swamy
-                          <br/>
-                          <small>Research Assistant </small>
-                        </h5>
-                         <p><button type="button" class="btn btn-info" title="Samhit Swamy" data-toggle="popover" data-content="<p class='brief-p'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sam is an undergraduate Neuroscience student at USC with a pre-medicine emphasis. Before joining the Brain & Music project, she worked in the Cahn Lab in the Brain & Creativity Institute, focusing on EEG studies of meditative states. Her aspirations lie in the field of psychiatry, and in investigating how to incorporate alternative therapies into clinical practice. Raised in the funky Southern town of Memphis, TN, she grew up around blues and soul music and is excited to incorporate a love for music into her research pursuits.
-</p>">View details>></button></p>
+                        <div class="team-box">
+                           <div class="time-line">
+                             <img class="rounded-circle img-fluid d-block mx-auto" src="./img/samhita-1.jpg" alt="">
+                             <h5>Samhit Swamy
+                               <br/>
+                               <small>Research Assistant </small>
+                             </h5>
+                           </div>
+                         <p class="self-introduction">
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           Sam is an undergraduate Neuroscience student at USC with a pre-medicine emphasis. Before joining the Brain & Music project, she worked in the Cahn Lab in the Brain & Creativity Institute, focusing on EEG studies of meditative states. Her aspirations lie in the field of psychiatry, and in investigating how to incorporate alternative therapies into clinical practice. Raised in the funky Southern town of Memphis, TN, she grew up around blues and soul music and is excited to incorporate a love for music into her research pursuits.
+                         </p>
+
+                        </div>
                        </div>
 
 
@@ -262,7 +367,7 @@
      <!-- End team -->
 
      <!-- team -->
-     <section id="faq" class="bg-light">
+     <section id="faq" >
           <div class="container">
                <div class="g-pt-90 g-pb-70">
                     <div class="g-heading-v10 g-mb-65 text-center">
