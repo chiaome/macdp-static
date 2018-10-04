@@ -17,7 +17,12 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Boogaloo|Bubblegum+Sans|Cabin+Sketch|Love+Ya+Like+A+Sister" rel="stylesheet">  </head>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Boogaloo|Bubblegum+Sans|Cabin+Sketch|Love+Ya+Like+A+Sister" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+
+
+  </head>
     <style type="text/css">
       #faq {
         background-color: #F5F5F5;
@@ -58,6 +63,7 @@
         text-justify:inter-ideograph;
         /* width: 100%; */
       }
+
     </style>
 
   <body id="page-top">
@@ -90,9 +96,19 @@
               <a class="nav-link js-scroll-trigger" href="#gettinghere">Getting Here</a>
             </li>
 
+            <li class="nav-item">
+              <select onchange="languageChange(this.value)"  id="languageChange" class="selectpicker" data-width="95" data-style="btn-warning">
+                <option value="English">English</option>
+                <option value="Spanish">Español</option>
+
+              </select>
+
+            </li>
+
 
 
           </ul>
+
         </div>
       </div>
     </nav>
@@ -193,7 +209,7 @@
                           </div>
 
                            <p class="self-introduction">
-                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dr. Assal Habibi is an Assistant Research Professor of Psychology at the Brain and Creativity Institute at University of Southern California. Her research takes a broad perspective on how biological dispositions and environmental factors interact and how learning experiences during childhood shape human development. She is an expert in the use of electrophysiologic and neuroimaging methods to investigate human brain structure and function and her research has published in several peer reviewed journals. Dr. Habibi completed her doctoral work at UC Irvine, investigating the effects of musical training in musicians, non-musicians and patients with auditory impairments. Dr. Habibi is a classically trained pianist and has many years of musical teaching experience with children.
+                             Dr. Assal Habibi is an Assistant Research Professor of Psychology at the Brain and Creativity Institute at University of Southern California. Her research takes a broad perspective on how biological dispositions and environmental factors interact and how learning experiences during childhood shape human development. She is an expert in the use of electrophysiologic and neuroimaging methods to investigate human brain structure and function and her research has published in several peer reviewed journals. Dr. Habibi completed her doctoral work at UC Irvine, investigating the effects of musical training in musicians, non-musicians and patients with auditory impairments. Dr. Habibi is a classically trained pianist and has many years of musical teaching experience with children.
                            </p>
                         </div>
 
@@ -209,7 +225,7 @@
                               </h5>
                             </div>
                             <p class="self-introduction">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hanna Damasio M.D. is University Professor, Dana Dornsife Professor of Neuroscience and Director of the Dana and David Dornsife Cognitive Neuroscience Imaging Center at the University of Southern California.  Using computerized tomography and magnetic resonance scanning, she has developed methods of investigating human brain structure and studied functions such as language, memory and emotion, using both the lesion method and functional neuroimaging.Besides numerous scientific articles (her Web of Knowledge H Index is 74; over 25,000 citations) she is the author of the award-winning Lesion Analysis in Neuropsychology (Oxford University Press), and of Human Brain Anatomy in Computerized Images (also Oxford University Press), the first brain atlas based on computerized imaging data, now in its second edition.
+                              Hanna Damasio M.D. is University Professor, Dana Dornsife Professor of Neuroscience and Director of the Dana and David Dornsife Cognitive Neuroscience Imaging Center at the University of Southern California.  Using computerized tomography and magnetic resonance scanning, she has developed methods of investigating human brain structure and studied functions such as language, memory and emotion, using both the lesion method and functional neuroimaging.Besides numerous scientific articles (her Web of Knowledge H Index is 74; over 25,000 citations) she is the author of the award-winning Lesion Analysis in Neuropsychology (Oxford University Press), and of Human Brain Anatomy in Computerized Images (also Oxford University Press), the first brain atlas based on computerized imaging data, now in its second edition.
                             </p>
                           </div>
 
@@ -226,7 +242,7 @@
 
                             </div>
                             <p class="self-introduction">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Antonio Damasio is University Professor, David Dornsife Professor of Neuroscience, Professor of Psychology, Professor of Philosophy, and Director of the Brain and Creativity Institute at the University of Southern California; he is also an adjunct professor at the Salk Institute in La Jolla, California.  Damasio has made seminal contributions to the understanding of brain processes underlying, emotions, feelings, decision-making and consciousness.  He is the author of numerous scientific articles (his Google scholar H Index is 144; over 129,000 citations) and his research has received continuous Federal funding for 30 years.  He is the recipient of many awards (including the Grawemeyer Award, 2014; the Honda Prize, 2010; the Asturias Prize in Science and Technology, 2005; and the Signoret Prize, 2004, which he shared with his wife Hanna Damasio).
+                              Antonio Damasio is University Professor, David Dornsife Professor of Neuroscience, Professor of Psychology, Professor of Philosophy, and Director of the Brain and Creativity Institute at the University of Southern California; he is also an adjunct professor at the Salk Institute in La Jolla, California.  Damasio has made seminal contributions to the understanding of brain processes underlying, emotions, feelings, decision-making and consciousness.  He is the author of numerous scientific articles (his Google scholar H Index is 144; over 129,000 citations) and his research has received continuous Federal funding for 30 years.  He is the recipient of many awards (including the Grawemeyer Award, 2014; the Honda Prize, 2010; the Asturias Prize in Science and Technology, 2005; and the Signoret Prize, 2004, which he shared with his wife Hanna Damasio).
                             </p>
 
                           </div>
@@ -245,7 +261,7 @@
 
                              </div>
                            <p class="self-introduction">
-                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Priscilla has worked with the Brain and Music Project since 2015 as a parent interviewer, translator and research coordinator. She first developed her interest in research with understudied populations through her volunteer work as an undergraduate at the University of California, Los Angeles, where she studied Biology. She enjoys reading, hiking and spending time with her cat, Pancho.
+                             Priscilla has worked with the Brain and Music Project since 2015 as a parent interviewer, translator and research coordinator. She first developed her interest in research with understudied populations through her volunteer work as an undergraduate at the University of California, Los Angeles, where she studied Biology. She enjoys reading, hiking and spending time with her cat, Pancho.
                            </p>
                           </div>
                          </div>
@@ -260,8 +276,8 @@
                                 </h5>
                               </div>
                             <p class="self-introduction">
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sarah graduated from Occidental College in 2017 with a BA in Psychology and a minor in Ethnomusicology. She has been with the Brain & Music project since 2015, and her time in the lab has cultivated her passion for the intersection of music and science. In her free time, Sarah teaches violin, sings with her friends, and reads books in the southern California sun.
+
+                              Sarah graduated from Occidental College in 2017 with a BA in Psychology and a minor in Ethnomusicology. She has been with the Brain & Music project since 2015, and her time in the lab has cultivated her passion for the intersection of music and science. In her free time, Sarah teaches violin, sings with her friends, and reads books in the southern California sun.
                             </p>
 
                            </div>
@@ -279,7 +295,7 @@
 
                                </div>
                              <p class="self-introduction">
-                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                                Katrina graduated from King’s College London in 2016 with a MSc in Neuroimaging. This is her second year with the Brain & Music Project, where she works mainly with scanning and analyzing the MRI data. When she isn’t at the lab, she enjoys playing volleyball and going to the beach.
                              </p>
 
@@ -300,7 +316,7 @@
                              </h5>
                            </div>
                          <p class="self-introduction">
-                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                            Alison graduated from Beloit College in 2016 with a Psychology major and Music minor. She works with the EEG data analysis and collection on the Brain & Music Project. In her free time, Alison enjoys reading and playing music.
                          </p>
 
@@ -318,7 +334,7 @@
 
                             </div>
                           <p class="self-introduction">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                             Gabriel is an undergraduate senior majoring in Neuroscience and Cognitive Science. A background in music performance and composition led him to the Brain & Music Program, where he has been a research assistant since 2016. With graduate school on the horizon, he hopes to explore more deeply the field of cognitive neuroscience. His other interests include surfing, backpacking, and photography.
                           </p>
 
@@ -335,7 +351,7 @@
                                </h5>
                              </div>
                            <p class="self-introduction">
-                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                              Rohan is an undergraduate student in his 3rd year at the University of Southern California, where he is pursuing a degree in Neuroscience and Early Childhood Education. He is delighted to be a part of the Brain & Music Project, where he is working to understand the impact of musical training on brain development. Outside the lab, Rohan is a part of the USC Men’s Soccer Team and also loves to read, write, and play piano.
                            </p>
                           </div>
@@ -352,12 +368,29 @@
                              </h5>
                            </div>
                          <p class="self-introduction">
-                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
                            Sam is an undergraduate Neuroscience student at USC with a pre-medicine emphasis. Before joining the Brain & Music project, she worked in the Cahn Lab in the Brain & Creativity Institute, focusing on EEG studies of meditative states. Her aspirations lie in the field of psychiatry, and in investigating how to incorporate alternative therapies into clinical practice. Raised in the funky Southern town of Memphis, TN, she grew up around blues and soul music and is excited to incorporate a love for music into her research pursuits.
                          </p>
 
                         </div>
                        </div>
+
+                       <div class="col-lg-4 col-sm-6 text-center mb-4">
+                         <div class="team-box">
+                            <div class="time-line">
+                              <img class="rounded-circle img-fluid d-block mx-auto" src="./img/bea.jpg" alt="">
+                              <h5>Beatriz Ilari
+                                <br/>
+                                <small>Research Assistant </small>
+                              </h5>
+                            </div>
+                          <p class="self-introduction">
+
+                            Beatriz Ilari is Associate Professor of Music Education at the University of Southern California where she teaches graduate courses in music psychology, the sociology of music education, music in childhood, and research methods. She has conducted extensive research with babies, preschoolers, and school-aged children from the U.S., Brazil, Canada, Japan, and Mexico. In her work, she uses a variety of approaches to study different aspects of musical development and growth of infants, children, and adolescents. Her research is interdisciplinary in nature. Beatriz collaborates with scholars from diverse fields, including neuroscientists from USC’s Brain & Creativity Institute, and psychologists and educators from the Advancing Interdisciplinary Research in Singing (AIRS) team. She is currently the editor for Perspectives: Journal of the Early Childhood Music & Movement and Association(ECMMA), and also serves on the editorial boards of prestigious journals including Psychology of Music, Musicae Scientiae, and Music & Science.
+                          </p>
+
+                         </div>
+                        </div>
 
 
                     </div>
@@ -428,10 +461,10 @@
                                    <h4>How can I schedule visits?</h4>
                                    <p class="text-justify">Call Priscilla at (323) 557- 3782. We are available Monday-Thursday 9am-6pm, and Saturday and Sunday 9am-6pm. If you need to reschedule a visit, please call or email us before your visit time!</p>
                               </div>
-                              <div class="tab-in">
+                              <!-- <div class="tab-in">
                                    <h4>Have a concern/question/complaint?</h4>
                                    <p class="text-justify">Feel free to share any concerns, questions, suggestions for improvement or complaints with us. You can call us directly or you can send us an anonymous message through this form. </p>
-                              </div>
+                              </div> -->
 
                           </div>
                         </div>
@@ -492,10 +525,10 @@
                                    <h4>What else should I know about MRI?</h4>
                                    <p class="text-justify">If your child has: a cardiac pacemaker; a metal clip in his/her body, a piece of metal in his/her eye she/he cannot have a MRI because the metal parts will be attracted by the magnet and will heat up. Any loose metallic object in your child’s body or in his/her pockets has to be removed because it will be attracted by the magnet and it will fly out of his/her pockets. This includes: key, jewelry, money clips, paper clips, safety pins, hairpins and barrettes. If you choose to stay inside the MRI scanning room during the session with your child, you will be asked to remove all metal and electronic objects prior to entering the MRI room. In addition, objects such as watches, credit cards and hearing aids could be damaged in the presence of magnetic field. A locker will be provided for you and your child to secure your items and valuables.</p>
                               </div>
-                              <div class="tab-in">
+                              <!-- <div class="tab-in">
                                    <h4>Have a concern/question/complaint?</h4>
                                    <p class="text-justify">Feel free to share any concerns, questions, suggestions for improvement or complaints with us. You can call us directly or you can send us an anonymous message through this form. </p>
-                              </div>
+                              </div> -->
 
                           </div>
                         </div>
@@ -598,12 +631,12 @@
                                   <div class="embed-responsive embed-responsive-21by9">
                                       <p class="img-center"><iframe id="envideo" class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/4_O8tisCBXg?rel=0&amp;ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
                                   </div>
-                                  <br/>
+                                  <!-- <br/>
                                   <h5 class="h5">Spanish MRI Video</h5>
                                   <br/>
                                   <div class="embed-responsive embed-responsive-21by9">
                                       <p class="img-center"><iframe id="spvideo" class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/1_WgTeZxaBc?rel=0&amp;ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
-                                  </div>
+                                  </div> -->
 
                                 </div>
                               </div>
@@ -694,8 +727,75 @@
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+
+
     <script type="text/javascript">
+    // $('.selectpicker').selectpicker('val', 'English');
+    // var language = getCookie('language');
+    // if(language == "") {
+    //   setCookie('language', 'Spanish', 100);
+    //   // $('.selectpicker').selectpicker('val', 'Spanish');
+    //   document.getElementById("languageChange").value = 'Spanish';
+    // }else if(language == "Spanish"){
+    //   // $('.selectpicker').selectpicker('val', 'Spanish');
+    //   document.getElementById("languageChange").value = 'Spanish';
+    //   redirect("Spanish");
+    // }else {
+    //   document.getElementById("languageChange").value = 'English';
+    //
+    //   // $('.selectpicker').selectpicker('val', 'English');
+    //   redirect("English");
+    // }
+
+
+    function languageChange(val) {
+
+        setCookie('language', val, 100);
+        if(val == "English") {
+          redirect("English");
+        }else {
+          redirect("Spanish");
+        }
+
+
+    }
+
+    function redirect(val){
+      if(val == "English") {
+        window.location.href="index.html";
+      }else {
+        window.location.href="spanish.html";
+      }
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+
     $(function (){
+      // To style only selects with the selectpicker class
+
       $("[data-toggle='popover']").popover(
         {html : true ,
          placement: 'auto',
